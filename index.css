@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url('https://images.unsplash.com/photo-1545112719-ce81d7de0b71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGNvbXB1dGVyJTIwa2V5Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    transition: filter 0.7s;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 4px;
+} 
+
+.btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 200px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
+
+.active.container {
+    filter: blur(10px) brightness(0.7);
+}
+
+
+
+
+.popup-container {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: url('https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: all 0.4s;
+ }
+
+h4 {
+    color: blueviolet;
+    font-size: 30px;
+    margin: 15px 0px;
+    font-family: sans-serif;
+}
+
+label  {
+    color: blueviolet;
+    font-family: sans-serif;
+}
+
+.popup-btn {
+    background-color: orange;
+    font-family: sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.input::placeholder {
+    color: lightgray;
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: orange;
+}
+
+.active.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
